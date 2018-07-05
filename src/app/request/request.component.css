@@ -99,3 +99,51 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.request-form-finish__contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 100px;
+    align-content:center;
+}
+
+.request-form-finish__icons{
+    min-width: 64px;
+    height: 40px;
+    margin-top:24px;
+}
+
+.request-form-finish__vk-icon{
+    vertical-align: top !important;
+    cursor: pointer;
+    width: 27px;
+    margin-right: 12px;
+    padding-bottom: 10px;
+}
+
+.request-form-finish__inst-icon{
+    vertical-align: top !important;
+    cursor: pointer;
+    width: 18px;
+    padding-bottom: 10px;
+}
+
+.request-form-finish__vk-icon:hover{
+    border-bottom: 2px solid rgb(237, 30, 121);
+}
+
+.request-form-finish__inst-icon:hover{
+    border-bottom: 2px solid rgb(237, 30, 121);
+}
+
+.request-form-finish__phone-description{
+    font-family: "ProximaNova-Semibold";
+    font-size: 12pt;
+}
+
+.request-form-finish__phone-number{
+    font-family: "ProximaNova-Semibold";
+    font-size: 18pt;
+    color: #26add5;
+}

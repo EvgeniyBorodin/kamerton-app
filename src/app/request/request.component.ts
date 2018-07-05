@@ -75,11 +75,11 @@ export class RequestComponent implements OnInit {
     });
 
     this.childrenInfoForm = this.fb.group({
-      'firstChildAge': new FormControl('', [Validators.required, Validators.min(3), Validators.max(17)]),
+      'firstChildAge': new FormControl('', [Validators.required, Validators.min(4), Validators.max(17)]),
       'firstChildStudio': new FormControl(''),
-      'secondChildAge': new FormControl('', [Validators.required, Validators.min(3), Validators.max(17)]),
+      'secondChildAge': new FormControl('', [Validators.required, Validators.min(4), Validators.max(17)]),
       'secondChildStudio': new FormControl(''),
-      'thirdChildAge': new FormControl('', [Validators.required, Validators.min(3), Validators.max(17)]),
+      'thirdChildAge': new FormControl('', [Validators.required, Validators.min(4), Validators.max(17)]),
       'thirdChildStudio': new FormControl('')
     });
 
@@ -195,5 +195,13 @@ export class RequestComponent implements OnInit {
     if(this.personInfo.phone.indexOf('_') >= 0){
       this.personInfoForm.controls['phone'].setValue('');
     }
+  }
+
+  vkHref(){
+    window.open('https://vk.com/kamerton.hall', '_blank');
+  }
+
+  instHref(){
+    window.open('https://www.instagram.com/kamerton.hall', '_blank');
   }
 }

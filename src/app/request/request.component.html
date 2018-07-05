@@ -161,7 +161,7 @@
                           *Ваш ребёнок уже не ребёнок!
                         </div>
                         <div *ngIf="isChildControlValidAge('firstChildAge') || isChildControlValidAge('secondChildAge') || isChildControlValidAge('thirdChildAge')" class="custom-form-control-error-text custom-form-control-error-text_italic">
-                            *Мы принимаем детей от 3-х до 17 лет!
+                            *Мы принимаем детей от 4-х до 17 лет!
                           </div>
               </form>
             </div>
@@ -176,6 +176,20 @@
       </div>
       <div class="request-form-finish__description request-form__description">
         Мы свяжемся с Вами в течение суток для уточнения информации
+      </div>
+      <div class="request-form-finish__contacts">
+        <div class="request-form-finish__phone">
+        <div class="request-form-finish__phone-description">
+          телефон для справок:
+        </div>
+        <div class="request-form-finish__phone-number">
+          +7 (3462) 711-818
+        </div>
+        </div>
+        <div class="request-form-finish__icons">
+        <img (click)="vkHref()" class="request-form-finish__vk-icon" src="../../assets/images/kamerton_vk-icon.svg"/>
+        <img (click)="instHref()" class="request-form-finish__inst-icon" src="../../assets/images/kamerton_instagram-icon.svg"/>
+        </div>
       </div>
     </div>
 

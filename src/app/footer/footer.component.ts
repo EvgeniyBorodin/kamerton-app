@@ -17,4 +17,12 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  vkHref(){
+    window.open('https://vk.com/kamerton.hall', '_blank');
+  }
+
+  instHref(){
+    window.open('https://www.instagram.com/kamerton.hall', '_blank');
+  }
+
 }
